@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AkarSehat</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="d-flex flex-column flex-md-row vh-100 overflow-hidden">
+
+  <div class="d-flex d-md-none justify-content-between align-items-center p-3 bg-white border-bottom shadow-sm">
+    <a class="navbar-brand fw-bold text-dark text-decoration-none" href="#"><i class="bi bi-diagram-2-fill"></i>  AkarSehat</a>
+    <button class="btn btn-light border" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
+      aria-controls="sidebarMenu">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+  </div>
+
+  <aside class="offcanvas-md offcanvas-start border-end bg-white" tabindex="-1" id="sidebarMenu"
+    aria-labelledby="sidebarMenuLabel" style="width: 280px;">
+    
+    <div class="offcanvas-header border-bottom d-md-none">
+      <h5 class="offcanvas-title fw-bold" id="sidebarMenuLabel"><i class="bi bi-diagram-2-fill"></i>  AkarSehat</h5>
+      <button type="button" class="btn-close d-md-none" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
+        aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column p-3 h-100">
+
+      <div class="d-flex align-items-center mb-4 mt-md-3">
+        <i class="bi bi-person-circle text-secondary me-3" style="font-size: 40px;"></i>
+        <div>
+          <h5 class="text-dark mb-0 fw-bold" style="font-size: 14px;">Portal Kesehatan<br>Keluarga</h5>
+          <p class="mb-0 fw-medium" style="font-size: 12px; color: #059669;">Analisis Risiko Aktif</p>
+        </div>
+      </div>
+
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item mb-3">
+          <a href="dashboard.html" class="nav-link text-dark"><i class="bi bi-house-door"></i>  Home</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="my-tree.html" class="nav-link text-dark"><i class="bi bi-diagram-2"></i>  My Tree</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="nav-link text-white active" aria-current="page"><i class="bi bi-shield-plus"></i>  Health Insight</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="record.html" class="nav-link text-dark"><i class="bi bi-folder"></i>  Record</a>
+        </li>
+      </ul>
+      <br><br><br><br><br><br><br><br>
+      <hr>
+
+      <div class="mt-auto">
+        <button class="btn btn-outline-custom w-100 mb-3 py-2 d-flex align-items-center justify-content-center gap-2">
+          <i class="bi bi-people"></i> Tanya Keluarga
+        </button>
+        <a href="#" class="text-secondary text-decoration-none d-flex align-items-center gap-2"
+          style="font-size: 0.9rem;">
+          <i class="bi bi-question-circle"></i> Pusat Bantuan
+        </a>
+      </div>
+
+    </div>
+  </aside>
+
+  <main class="flex-grow-1 bg-light overflow-auto d-flex flex-column">
+    <header class="bg-white d-none d-md-flex justify-content-between align-items-center p-3"
+      style="border-bottom: solid 1px lightgray;">
+      <h4 class="topbar-title"><i class="bi bi-diagram-2-fill"></i> AkarSehat</h4>
+      <div class="d-flex gap-3 text-primary">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"><i class="bi bi-bell-fill fs-5" ></i></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Notifikasi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="d-flex align-items-start gap-3 p-3 border-bottom">
+              <div class="bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:42px; height:42px;">
+                <i class="bi bi-exclamation-triangle"></i>
+              </div>
+              <div>
+                <p class="fw-semibold mb-0 small">Pola risiko baru terdeteksi!</p>
+                <small class="text-muted">Analisis terbaru menunjukkan risiko tinggi pada garis keturunan Ibu.</small><br>
+                <small class="text-muted fst-italic">Baru saja</small>
+              </div>
+            </div>
+      
+          
+            <div class="d-flex align-items-start gap-3 p-3 border-bottom">
+              <div class="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:42px; height:42px;">
+                <i class="bi bi-person-check"></i>
+              </div>
+              <div>
+                <p class="fw-semibold mb-0 small">Data keluarga berhasil diperbarui!</p>
+                <small class="text-muted">Riwayat kesehatan Kakek (sisi Ibu) telah ditambahkan.</small><br>
+                <small class="text-muted fst-italic">2 jam lalu</small>
+              </div>
+            </div>
+      
+            
+            <div class="d-flex align-items-start gap-3 p-3 border-bottom">
+              <div class="bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:42px; height:42px;">
+                <i class="bi bi-shield-exclamation"></i>
+              </div>
+              <div>
+                <p class="fw-semibold mb-0 small">Perlu tindakan pencegahan</p>
+                <small class="text-muted">Disarankan untuk melakukan pemeriksaan kardiovaskular dini.</small><br>
+                <small class="text-muted fst-italic">1 hari lalu</small>
+              </div>
+            </div>
+      
+           
+            <div class="d-flex align-items-start gap-3 p-3">
+              <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:42px; height:42px;">
+                <i class="bi bi-calendar-check"></i>
+              </div>
+              <div>
+                <p class="fw-semibold mb-0 small">Pengingat: Jadwal Konsultasi Dokter</p>
+                <small class="text-muted">Jadwal penilaian klinis Anda besok pukul 09:00 WIB.</small><br>
+                <small class="text-muted fst-italic">2 hari lalu</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+              <span class="badge-status mb-3 d-inline-block">
+                  <i class="bi bi-check-circle-fill"></i> Analisis Selesai
+              </span>
+              <h5 class="fw-bold">Langkah Selanjutnya & Rencana Tindakan</h5>
+              <p class="text-muted small w-75">Berdasarkan riwayat keluarga dan analisis risiko terbaru, kami telah menyusun rencana yang personal untuk mengelola kesehatan Anda secara proaktif.</p>
+          </div>
+          <div class="align-content-center justify-content-center align-items-start">
+            <button class="btn btn-navy py-2 px-4">
+              <i class="bi bi-file-earmark-medical me-2"></i>Laporan Dokter
+          </button>
+          </div>
+          
+      </div>
+  
+      <div class="row g-4">
+          <div class="col-md-8">
+              <div class="card action-card p-4 h-100">
+                  <div class="d-flex align-items-center mb-4">
+                      <div class="text-primary me-2"><i class="bi bi-activity fs-4"></i></div>
+                      <span class="fw-semibold">Tindakan yang Direkomendasikan</span>
+                  </div>
+  
+                  <div class="d-flex mb-4">
+                      <div class="me-3">
+                          <div class="number-circle">1</div>
+                      </div>
+                      <div>
+                          <h6 class="fw-bold mb-1">Cek tekanan darah rutin mulai bulan depan</h6>
+                          <p class="text-muted small mb-1">Karena riwayat hipertensi dari ayah, pemantauan dasar direkomendasikan setiap 3 bulan.</p>
+                          <a href="#" class="text-decoration-none small fw-bold">Setel pengingat &rarr;</a>
+                      </div>
+                  </div>
+  
+                  <hr class="opacity-10 mb-4">
+  
+                  <div class="d-flex mb-4">
+                      <div class="me-3">
+                          <div class="number-circle">2</div>
+                      </div>
+                      <div class="w-100">
+                          <h6 class="fw-bold mb-1">Konsultasi dengan spesialis tentang riwayat keluarga</h6>
+                          <p class="text-muted small mb-3">Jadwalkan konsultasi dengan konselor genetik terkait penanda jantung garis ibu.</p>
+                          <button class="btn btn-success px-4">
+                            <a href="https://www.google.com/maps/search/klinik+terdekat/@-7.4556674,112.4172255,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                              Cari Spesialis
+                            </a>
+                          </button>
+                      </div>
+                  </div>
+  
+                  <hr class="opacity-10 mb-4">
+  
+                  <div class="d-flex mb-2">
+                      <div class="me-3">
+                          <div class="number-circle">3</div>
+                      </div>
+                      <div>
+                          <h6 class="fw-bold mb-1">Perbarui panel lipid</h6>
+                          <p class="text-muted small">Panel lipid terakhir Anda lebih dari 18 bulan yang lalu. Pembaruan diperlukan untuk penilaian risiko yang akurat.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-4">
+              <div class="card sidebar-card shadow-sm h-100">
+                  <div class="position-relative">
+                      <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="Clinic" style="height: 150px; object-fit: cover; filter: brightness(0.7);">
+                      <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                          <h6 class="mb-0 fw-bold">Jaringan Perawatan Lokal</h6>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <div class="d-flex align-items-start mb-3">
+                          <i class="bi bi-geo-alt me-2 text-muted"></i>
+                          <p class="small text-muted mb-0">Mencari spesialis di dekat Anda</p>
+                      </div>
+  
+                      <div class="clinic-item">
+                          <h6 class="mb-0 fw-bold">Cardiology Associates</h6>
+                          <p class="mb-0 text-muted smaller" style="font-size: 0.75rem;">2.4 miles away • Accepting new patients</p>
+                      </div>
+  
+                      <div class="clinic-item">
+                          <h6 class="mb-0 fw-bold">City General - Internal Med</h6>
+                          <p class="mb-0 text-muted smaller" style="font-size: 0.75rem;">3.1 miles away • Genetic Counselors on staff</p>
+                      </div>
+  
+                      <button class="btn btn-outline-secondary w-100 mt-3 py-2 small">
+                        <a href="https://www.google.com/maps/search/klinik+terdekat/@-7.4556674,112.4172255,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                          <i class="bi bi-search me-2"></i>Cari Klinik
+                        </a>
+                      </button>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-12">
+              <div class="share-banner d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                      <div class="bg-white rounded-circle p-3 me-4 d-flex align-items-center justify-content-center shadow-sm" style="width: 60px; height: 60px;">
+                          <i class="bi bi-people-fill fs-4 text-navy"></i>
+                      </div>
+                      <div>
+                          <h6 class="fw-bold mb-1">Bagikan Wawasan dengan Keluarga</h6>
+                          <p class="text-muted small mb-0">Beritahu saudara atau anak dewasa tentang risiko bersama yang teridentifikasi dalam laporan ini.</p>
+                      </div>
+                  </div>
+                  <div class="d-flex gap-2">
+                      <button class="btn btn-navy px-3"><i class="bi bi-share me-2"></i>Bagikan Ringkasan</button>
+                      <button class="btn btn-outline-primary px-3 bg-white border-opacity-10 text-dark">Tinjau Izin</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <footer class="mt-5 py-3 bg-white border-top">
+      <div class="container-fluid text-center">
+        <p class="mb-1 text-secondary small fw-semibold">&copy; 2026 AkarSehat - Portal Kesehatan Keluarga</p>
+        <p class="mb-0 text-muted" style="font-size: 11px;">
+          <i class="bi bi-shield-check text-success"></i> Data yang ditampilkan berdasarkan analisis pola keluarga. Harap konsultasikan dengan profesional medis untuk diagnosis pasti.
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
